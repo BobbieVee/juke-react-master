@@ -1,13 +1,11 @@
 import React from 'react';
 
 export default class Album extends React.Component {
-	
 	render(){
-		//console.log('album', this.props.album)
 		const album = this.props.album;
 		return (
 			<div className="col-xs-4">
-		      <a className="thumbnail" href="#">
+		      <a className="thumbnail" href="#" onClick={this.props.onClick}>
 		        <img src={album.imageUrl} />
 		        <div className="caption">
 		          <h5>
